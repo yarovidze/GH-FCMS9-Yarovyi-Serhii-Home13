@@ -1,0 +1,134 @@
+@mixin backgr-image-header {
+  background-size: cover;
+  background-attachment: inherit;
+  text-align: center;
+  position: relative;
+  color: $light-color;
+}
+@mixin backgr-image {
+  background-size: cover;
+  background-attachment: inherit;
+  text-align: center;
+  position: relative;
+  color: $light-color;
+  padding: 100px 0;
+}
+@mixin slider-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  &:hover {
+    color: $main-color;
+    transition: 0.2s;
+  }
+}
+@mixin btn {
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 27px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  font-family: $main-font;
+  color: $light-color;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@mixin background-none {
+  padding: 50px 0;
+  position: relative;
+  color: $dark-color;
+  text-align: left;
+}
+@mixin background-none-cut {
+  padding: 50px 0 0;
+  position: relative;
+  color: $dark-color;
+  text-align: left;
+}
+@mixin pagination {
+  list-style: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+@mixin pagination-list {
+  min-width: 15px;
+  min-height: 15px;
+  border-radius: 50%;
+  border: 2px solid;
+  cursor: pointer;
+  margin: 5px;
+  &:hover {
+    background-color: $light-color;
+    transition: 0.2s;
+  }
+}
+@mixin paragraph-custom {
+  font-size: 20px;
+  margin: 1em 0;
+}
+@mixin icon-ourservice {
+  padding: 25px;
+  margin-left: 10px;
+  display: inline-block;
+  background-color: $main-background;
+  border-radius: 50%;
+}
+@mixin member-of-team {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: $main-color;
+  display: none;
+  color: white;
+}
+@mixin btn-buy {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $main-color;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .purchase {
+    text-transform: uppercase;
+    color: $light-color;
+    display: flex;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .buy-icon {
+    color: $light-color;
+    display: flex;
+  }
+}
+@mixin cart-item {
+  background-color: $main-background;
+  text-align: left;
+  margin-top: 50px;
+}
+@mixin bold-head-text {
+  font-weight: 700;
+}
+@mixin nav-bar {
+  color: $light-color;
+  &:hover {
+    color: $main-color;
+  }
+}
+@mixin input {
+  padding: 10px 40px;
+  outline: none;
+  border-radius: 27px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: $main-font;
+  color: $light-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+}

@@ -1,0 +1,229 @@
+.main-header {
+  background-image: url(../img/Multiply.jpg);
+  height: 100vh;
+  @include backgr-image-header;
+  & .display-form-none {
+    display: none;
+  }
+  & .display-form {
+    display: block;
+  }
+
+  & .container-form {
+    max-width: 400px;
+    background-color: $secondary-background;
+    color: $dark-color;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  & .container-registration {
+    max-width: 600px;
+    background-color: $secondary-background;
+    color: $dark-color;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  & .slider-block {
+    margin-top: 100px;
+
+    .custom-head-text {
+      @include bold-head-text;
+    }
+
+    & .paragraph-custom {
+      @include paragraph-custom;
+    }
+  }
+
+  & .slider-arrow-left {
+    left: 5%;
+    @include slider-arrow;
+  }
+
+  & .slider-arrow-right {
+    right: 5%;
+    @include slider-arrow;
+  }
+
+  & .arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-color;
+      transition: 0.2s;
+    }
+  }
+
+  & .pagination {
+    @include pagination;
+
+    .pagination-list {
+      @include pagination-list;
+    }
+  }
+}
+
+.about-us {
+  @include background-none;
+  text-align: center;
+  & p {
+    margin-bottom: 50px;
+  }
+
+  & .about-us-items {
+    margin: 50px 0;
+
+    & .icon {
+      display: inline-block;
+      padding: 30px;
+      border-radius: 50%;
+      background-color: $secondary-background;
+
+      &:hover {
+        background-color: $main-color;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.foto {
+  @include background-none;
+  background-color: $secondary-background;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.mac {
+  @include background-none;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.opinion {
+  @include backgr-image;
+  background-image: url(../img/opinion-back.jpg);
+
+  & .pagination {
+    @include pagination;
+
+    .pagination-list {
+      @include pagination-list;
+    }
+  }
+
+  & .slider-arrow-left {
+    left: 5%;
+    @include slider-arrow;
+  }
+
+  & .slider-arrow-right {
+    right: 5%;
+    @include slider-arrow;
+  }
+
+  & .paragraph-custom {
+    @include paragraph-custom;
+
+    & .color-text {
+      color: $main-color;
+    }
+  }
+}
+
+.our-service {
+  @include background-none;
+  background-color: $secondary-background;
+  text-align: center;
+  & p {
+    margin-bottom: 100px;
+  }
+
+  .our-service-list {
+    text-align: left;
+    margin: 50px 0;
+    @media (max-width: 992px) {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .icon-our-service {
+      @include icon-ourservice;
+    }
+  }
+}
+.our-team {
+  @include background-none-cut;
+  text-align: center;
+  & p {
+    margin-bottom: 100px;
+  }
+  .team-gread {
+    position: relative;
+    & img {
+      width: 100%;
+    }
+    &:hover .show-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .show-name {
+      @include member-of-team;
+    }
+  }
+}
+.pricing {
+  @include background-none;
+  background-color: $secondary-background;
+  text-align: center;
+  .card-item {
+    @include cart-item;
+    .description {
+      padding: 40px 20px;
+      & p {
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+    .price {
+      padding: 20px;
+      border-bottom: 1px solid $secondary-background;
+      .cost {
+        color: $main-color;
+        font-size: 40px;
+      }
+    }
+    .buy-btn {
+      @include btn-buy;
+    }
+  }
+}
+.map {
+  @include background-none;
+
+  & img {
+    width: 100%;
+  }
+}
+.try-our-template {
+  @include backgr-image;
+  background-image: url(../img/Try_our_template.jpg);
+  .custom-head-text {
+    @include bold-head-text;
+  }
+}
+
+
+

@@ -1,0 +1,13 @@
+.decoration {
+  &:after {
+    content: ' ';
+    position: relative;
+    top: -5px;
+    left: 50%;
+    margin-left: -20px;
+    display: block;
+    width: 40px;
+    height: 1px;
+    border-bottom: 2px solid $main-color;
+  }
+}

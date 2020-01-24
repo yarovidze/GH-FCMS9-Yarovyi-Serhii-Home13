@@ -1,0 +1,34 @@
+.copyright {
+  background-image: url(../img/vector_smart.png);
+  background-size: contain;
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $dark-color;
+  min-height: 400px;
+
+  & .logo-copyright {
+    padding: 20px;
+    font-size: 18px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+
+  & .nav-link {
+    padding: 20px;
+    color: $dark-color;
+    font-weight: 200;
+
+    & .active-link {
+      font-weight: 500 !important;
+      color: black !important;
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
+}

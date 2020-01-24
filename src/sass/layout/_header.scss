@@ -1,0 +1,14 @@
+.navbar-custom {
+  text-transform: uppercase;
+  outline: none;
+
+  & a {
+    @include nav-bar;
+  }
+  .navbar-toggler {
+    @include nav-bar;
+  }
+  .nav-item {
+    margin-right: 10px;
+  }
+}

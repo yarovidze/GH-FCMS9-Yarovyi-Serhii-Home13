@@ -1,0 +1,57 @@
+body {
+  font-size: 16px;
+  font-family: $main-font;
+  background-color: $main-background;
+  font-weight: 400;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 2em;
+  font-family: $secondary-font;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 2em;
+  font-family: $secondary-font;
+}
+h3 {
+  font-size: 25px;
+  line-height: 2em;
+  font-weight: 300;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+h5 {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 200;
+}
+p {
+  font-size: 14px;
+  line-height: 2em;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  @include input;
+  color: black;
+}
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+label {
+  font-size: 1.2em;
+}
